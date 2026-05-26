@@ -28,6 +28,8 @@ Start with Docker Compose:
 docker compose up -d --build
 ```
 
+For 1Panel, upload the whole project directory and create the compose from this `docker-compose.yml`. The service is built from the local `Dockerfile`, so do not configure `n-docs:latest` as an external image to pull.
+
 Stop the service:
 
 ```bash

@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: n-docs:latest
+    pull_policy: build
     container_name: ai-docs
     restart: unless-stopped
     ports:
