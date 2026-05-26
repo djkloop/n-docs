@@ -22,7 +22,19 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ## Docker Deployment
 
-Build the production image:
+Start with Docker Compose:
+
+```bash
+docker compose up -d --build
+```
+
+Stop the service:
+
+```bash
+docker compose down
+```
+
+Or build the production image manually:
 
 ```bash
 docker build -t n-docs .

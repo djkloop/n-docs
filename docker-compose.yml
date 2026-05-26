@@ -1,0 +1,14 @@
+services:
+  ai-docs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: n-docs:latest
+    container_name: ai-docs
+    restart: unless-stopped
+    ports:
+      - "8670:8670"
+    environment:
+      NODE_ENV: production
+      PORT: 8670
+      HOSTNAME: 0.0.0.0
